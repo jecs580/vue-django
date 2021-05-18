@@ -1,5 +1,4 @@
 .env/
-/frontend/node_modules
 
 .DS_Store
 frontend/node_modules
@@ -163,3 +162,4 @@ Thumbs.db
 # profiling data
 .prof
 
+node_modules/
