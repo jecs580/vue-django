@@ -5,7 +5,14 @@
                 <h2>Listado de Libros</h2>
                 <div class="col-md-12">
                     <b-table striped hover :items="books" :fields="fields">
-
+                        <template #cell(action)="">
+                             <b-button class="mx-2" size="sm" variant="primary">
+                                Editar
+                            </b-button>
+                            <b-button size="sm" variant="danger">
+                                Eliminar
+                            </b-button>
+                        </template>
                     </b-table>
                 </div>
             </div>
@@ -21,7 +28,7 @@ export default {
             fields: [
                 {key:'title', label:'Título'},
                 {key:'description', label:'Descripción'},
-                {key:'action', label:'Acción'}
+                {key:'action', label:''}
             ],
             books:[]
         }
