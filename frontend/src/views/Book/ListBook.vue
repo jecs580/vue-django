@@ -5,8 +5,8 @@
                 <h2>Listado de Libros</h2>
                 <div class="col-md-12">
                     <b-table striped hover :items="books" :fields="fields">
-                        <template #cell(action)="">
-                             <b-button class="mx-2" size="sm" variant="primary">
+                        <template #cell(action)="data" >
+                             <b-button class="mx-2" size="sm" variant="primary" :to="{name:'EditBook',params:{Bookid:data.item.id}}">
                                 Editar
                             </b-button>
                             <b-button size="sm" variant="danger">
