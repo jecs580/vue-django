@@ -9,7 +9,7 @@
                              <b-button class="mx-2" size="sm" variant="primary" :to="{name:'EditBook',params:{Bookid:data.item.id}}">
                                 Editar
                             </b-button>
-                            <b-button size="sm" variant="danger">
+                            <b-button size="sm" variant="danger" :to="{name:'DeleteBook',params:{Bookid:data.item.id}}">
                                 Eliminar
                             </b-button>
                         </template>
