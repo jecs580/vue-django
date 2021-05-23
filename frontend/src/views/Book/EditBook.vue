@@ -37,6 +37,7 @@
 </template>
 <script>
 import axios from 'axios'
+import swal from 'sweetalert';
 export default {
     data(){
         return{
@@ -55,7 +56,7 @@ export default {
                 const res = await axios.put(path,this.form);
                 this.form.title = res.data.title;
                 this.form.description = res.data.description;
-                alert('Libro actualizado exitosamente!')
+                swal('Libro actualizado exitosamente!','','success');
             } catch (error) {
                 console.log(error);
             }
