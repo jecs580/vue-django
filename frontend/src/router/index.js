@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import ListBook from '../views//Book/ListBook.vue'
 import EditBook from '../views//Book/EditBook.vue'
 import DeleteBook from '../views//Book/DeleteBook.vue'
-
+import NewBook from '../views/Book/NewBook.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,6 +27,11 @@ const routes = [
     path:'/books/:Bookid/delete',
     name:'DeleteBook',
     component:DeleteBook
+  },
+  {
+    path:'/books/new',
+    name:'NewBook',
+    component:NewBook
   }
 ]
 
